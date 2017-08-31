@@ -10,24 +10,23 @@
 
 int main(){
 	
-	int ntd = 0;                        /* Number of words to decipher */
+	int notc = 0;                        /* Number of test cases */
+	int caseNumber = 1;
+	char output[100] = {};
 	
-	printf("Enter number of words to decipher:");  //Console message
+	printf("Enter number of cases:");  //Console message
 	
-	scanf("%d", &ntd);          //Get number of words to decipher
+	scanf("%d", &notc);          //Get number of words to decipher
 	getchar();                  //clear new line from input buffer
 	
-	while(ntd >0){
-		//scanf("%[^\n]",wordToDecipher);
-		//getchar();               //clear new line from input buffer
+	while(notc >0){
 		
-		//wordDeciphered = {};			/* Clear Deciphered array */
-		//memset(wordDeciphered, '\0', sizeof(wordDeciphered));		/* Clear Deciphered array */
+		scanf("%[^\n]", output);
+		getchar();               //clear new line from input buffer
 		
-		//printf ("%s",wordDeciphered);
-		
-		puts("INVALID");
-		ntd--;
+		printf("Case #%d: %s\n",caseNumber, output);	//Print the output of the respective case
+		caseNumber++;				//Increase case number
+		notc--;				//decrease
 	}
 
 }
