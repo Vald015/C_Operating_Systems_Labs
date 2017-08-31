@@ -1,5 +1,5 @@
 /* 	Author: Osvaldo A. Ramirez
- ICOM5007- Lab0 Ex. 11716
+ ICOM5007- Lab0
  */
 
 #include <stdio.h>
@@ -7,12 +7,17 @@
 #include <string.h>
 #include <math.h>
 
+#define size 100
 
 int main(){
 	
 	int notc = 0;                        /* Number of test cases */
 	int caseNumber = 1;
-	char output[100] = {};
+	char input[size] = {};
+	char output[size] = {};
+	char temp[size] = {};
+	int i;
+	int k =0;
 	
 	printf("Enter number of cases:");  //Console message
 	
@@ -21,8 +26,19 @@ int main(){
 	
 	while(notc >0){
 		
-		scanf("%[^\n]", output);
+		scanf("%[^\n]", input);
 		getchar();               //clear new line from input buffer
+		
+		i = sizeof(input);
+		
+		
+		while(i != 0){
+			if(input[i] != ' '){
+				temp[k] = input[i];
+			}
+			//for(j = 0;)
+			i--;
+		}
 		
 		printf("Case #%d: %s\n",caseNumber, output);	//Print the output of the respective case
 		caseNumber++;				//Increase case number
