@@ -15,14 +15,35 @@
 #define GNC "Game  has not completed\n"	/* Incomplete game string */
 #define GO "Game Over\n"		/* Game over string */
 
-#define gameSize 4
+#define GAMESIZE 4	/* size of the game board */
+#define PLAYS 16	/* number of plays including T */
+
+/*	input:	XTXXOXOXOOOXOOXO
+ 
+	input:	XXXO
+			OXTX
+			OOOO
+			XXX.
+ */
+ 
 
 
 int main() {
 	
-	int notc = 0;
+	int notc = 0;			/* number of test cases */
+	int row = 0;
+	int column = 0;
 	
-	char game[4][4] = {};	/* Game two dimensional array */ 
+	char game[4][4] = {};	/* Game two dimensional array (first array is the rows, second array is the  columns) */
+	
+	for(int i = 0;i< PLAYS-1;i++){
+		for(int j =0; j < GAMESIZE){
+			
+		}
+		
+	}
+	
+	
 	
 	
 	
