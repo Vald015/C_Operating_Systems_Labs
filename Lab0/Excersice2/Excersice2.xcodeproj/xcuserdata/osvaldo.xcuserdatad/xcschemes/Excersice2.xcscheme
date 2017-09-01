@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2DDD459C1F53BBE4004714A7"
-               BuildableName = "stringblack"
-               BlueprintName = "stringblack"
-               ReferencedContainer = "container:stringblack.xcodeproj">
+               BlueprintIdentifier = "2D575ADA1F587FE500F78400"
+               BuildableName = "Excersice2"
+               BlueprintName = "Excersice2"
+               ReferencedContainer = "container:Excersice2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DDD459C1F53BBE4004714A7"
-            BuildableName = "stringblack"
-            BlueprintName = "stringblack"
-            ReferencedContainer = "container:stringblack.xcodeproj">
+            BlueprintIdentifier = "2D575ADA1F587FE500F78400"
+            BuildableName = "Excersice2"
+            BlueprintName = "Excersice2"
+            ReferencedContainer = "container:Excersice2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DDD459C1F53BBE4004714A7"
-            BuildableName = "stringblack"
-            BlueprintName = "stringblack"
-            ReferencedContainer = "container:stringblack.xcodeproj">
+            BlueprintIdentifier = "2D575ADA1F587FE500F78400"
+            BuildableName = "Excersice2"
+            BlueprintName = "Excersice2"
+            ReferencedContainer = "container:Excersice2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DDD459C1F53BBE4004714A7"
-            BuildableName = "stringblack"
-            BlueprintName = "stringblack"
-            ReferencedContainer = "container:stringblack.xcodeproj">
+            BlueprintIdentifier = "2D575ADA1F587FE500F78400"
+            BuildableName = "Excersice2"
+            BlueprintName = "Excersice2"
+            ReferencedContainer = "container:Excersice2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>stringblack.xcscheme</key>
+		<key>Excersice2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2DDD459C1F53BBE4004714A7</key>
+		<key>2D575ADA1F587FE500F78400</key>
 		<dict>
 			<key>primary</key>
 			<true/>

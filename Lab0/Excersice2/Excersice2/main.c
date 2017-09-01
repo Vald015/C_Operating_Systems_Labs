@@ -2,7 +2,6 @@
  ICOM5007- Lab0 Ex. 11716 uva.onlinejudge.org
  */
 
-#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -38,11 +37,10 @@ int main(){
 					wordDeciphered[current++] = wordToDecipher[j];
 				}
 			}
-			printf ("%s",wordDeciphered);			//Print word deciphered
+			printf ("%s \n",wordDeciphered);			//Print word deciphered
 		}else{
 			puts("INVALID");						//Invalid if the word length is not a perfect square
 		}
 		ntd--;				//Decrease number of words to decipher
 	}
 }
-
