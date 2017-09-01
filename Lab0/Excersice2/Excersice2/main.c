@@ -7,7 +7,7 @@
 #include <string.h>
 #include <math.h>
 
-#define NUMOFCHAR 10001				/* Contant maximum number of characters */
+#define NUMOFCHAR 10001				/* Contant maximum number of characters 10000 + null value */
 
 int main(){
 	
@@ -34,6 +34,7 @@ int main(){
 			int current = 0;			/* Current index of the wordDeciphered characters */
 			for(int i =0; i < root; i++){
 				for(int j = i; j < length; j = j + root){		//j + root to decipher word
+					/* set character indexed on word deciphered to character deciphered in Word to decipher */
 					wordDeciphered[current++] = wordToDecipher[j];
 				}
 			}
