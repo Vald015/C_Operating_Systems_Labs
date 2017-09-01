@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+#include <stdlib.h>
 
 /* Constants */
 #define P1 X		/* Player 1 symbol */
@@ -35,24 +36,23 @@ int main() {
 	int column = 0;
 	
 	char game[4][4] = {};	/* Game two dimensional array (first array is the rows, second array is the  columns) */
-	
-	for(int i = 0;i< PLAYS-1;i++){
-		for(int j =0; j < GAMESIZE){
-			
-		}
-		
-	}
-	
-	
-	
-	
-	
-	//TODO Compare with posible win conditions
-	
+	/*
 	printf("Enter notc: \n");
 	scanf("%d", &notc);
 	getchar();
 	printf("notc = %d\n",notc);
+	*/
+	
+	scanf("%4s",game[0]);
+	getchar();
+	printf("%s", game[0]);
+	/*for(; row < GAMESIZE;row++){
+		for(;column<GAMESIZE;column++){
+			
+		}
+	}*/
+	
+	//TODO Compare with posible win conditions
 	
 	return 0;
 }
