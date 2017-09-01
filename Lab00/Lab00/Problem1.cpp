@@ -13,12 +13,20 @@
 #define YWON "Player Y Won\n"				/* Player 2 won string  */
 #define Draw "Draw Game\n"				/* Tie game string */
 #define GNC "Game  has not completed\n"	/* Incomplete game string */
-#define GO "Game Over\n"					/* Game over string */
+#define GO "Game Over\n"		/* Game over string */
+
+#define gameSize 4
 
 
 int main() {
 	
 	int notc = 0;
+	
+	char game[4][4] = {};	/* Game two dimensional array */ 
+	
+	
+	
+	//TODO Compare with posible win conditions
 	
 	printf("Enter notc: \n");
 	scanf("%d", &notc);
@@ -27,3 +35,4 @@ int main() {
 	
 	return 0;
 }
+
