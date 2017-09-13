@@ -8,12 +8,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define ROWS 50
+#define COLUMNS 50
+#define K 20
+
 int main(){
 
   int notc = 0;
+  int rowIndex = 0;
   int rows = 0;
   int columns = 0;
-  int rowIndex = 0;
 
   /*scanf("%d",&notc);
   getchar();
@@ -23,8 +27,7 @@ int main(){
   scanf("%d %d", &rows, &columns);
   getchar();
   //printf("%d %d",rows, columns);
-  //TODO check this shit
-  char game[rows][columns];
+  char game[ROWS][COLUMNS] = {};
 
   while(rowIndex != rows){
     scanf("%s", game[rowIndex]);
@@ -35,10 +38,7 @@ int main(){
 
   rowIndex = 0;
 
-  while(rowIndex != rows){
-    printf("%s\n",game[rowIndex]);
-    rowIndex++;
-  }
+  printf("%s\n",game[rowIndex]);
 
   return 0;
 
