@@ -1,0 +1,7 @@
+/Users/osvaldo/Downloads/C_Operating_Systems_Labs/Lab00/Excersice2/Problema2.cpp:17:21: error: expected ')'
+bool checkWords(int case[2]);  /* Check different cases */
+                    ^
+/Users/osvaldo/Downloads/C_Operating_Systems_Labs/Lab00/Excersice2/Problema2.cpp:17:16: note: to match this '('
+bool checkWords(int case[2]);  /* Check different cases */
+               ^
+1 error generated.
