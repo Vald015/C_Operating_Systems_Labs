@@ -43,7 +43,7 @@ int main() {
 
 	char game[ROWS][COLUMNS] = {};	/* Game two dimensional array (first array is the rows, second array is the  columns) */
 
-	printf("Enter notc: \n");
+	//printf("Enter notc: \n");
 	scanf("%d", &notc);
 	getchar();
 	//printf("notc = %d\n",notc);
