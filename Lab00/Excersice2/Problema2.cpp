@@ -14,7 +14,7 @@
 #define COLUMNS 50    /* Set the number of columns */
 #define K 20          /* Set number of rows in the number of words to find */
 
-bool checkWords(int case[2]);  /* Check different cases */
+int checkWords(int case[2]);  /* Check different cases */
 
 int main(){
 
@@ -22,8 +22,8 @@ int main(){
   int rowIndex = 0;   /* Row index */
   int rows = 0;       /* Number of rows entered by the user */
   int columns = 0;    /* Number of columns entered by the user */
-  int cases[8][2] = {{-1,-1}};
-  char words[20][50] = {};
+  int cases[8][2] = {{-1,-1}};  /* array for the 8 different cases */
+  char words[20][50] = {};    /* Word to search in the game grid */
 
   /*scanf("%d",&notc);
   getchar();
@@ -43,10 +43,12 @@ int main(){
     rowIndex++;     /* Increase row index variable */
   }
 
+  /* Get word to search */
   scanf("%s\n",words[0]);
-  getchar();
+  getchar();      /* Clear input buffer */
   printf("%s",words[0]);
 
+  /* Search for the first letter */
   for(int i = 0;i<rows;i++){
     for(int j = 0;j< columns,j++){
 
