@@ -39,12 +39,14 @@ int main(){
   while(rowIndex != rows){
     scanf("%s\n", game[rowIndex]);    /* Enter row by row */
     getchar();    /* Clear input buffer */
-    //printf("%s", game[rowIndex]);
+    //printf("%s", game[rowIndex]);   //Test
     rowIndex++;     /* Increase row index variable */
   }
+  
   scanf("%s\n",words[0]);
   getchar();
   printf("%s",words[0]);
+
   /*for(int i = 0;i<rows;i++){
     for(int j = 0;j< columns,j++){
 
