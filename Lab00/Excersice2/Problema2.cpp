@@ -42,18 +42,18 @@ int main(){
     //printf("%s", game[rowIndex]);   //Test
     rowIndex++;     /* Increase row index variable */
   }
-  
+
   scanf("%s\n",words[0]);
   getchar();
   printf("%s",words[0]);
 
-  /*for(int i = 0;i<rows;i++){
+  for(int i = 0;i<rows;i++){
     for(int j = 0;j< columns,j++){
 
     }
-  }*/
-  rowIndex = 0;       /* TEST*/
-  printf("%s\n",game[rowIndex]);    /* TEST */
+  }
+  rowIndex = 0;      /* Reset row index */
+  //printf("%s\n",game[rowIndex]);    /* TEST */
 
   return 0;
 
