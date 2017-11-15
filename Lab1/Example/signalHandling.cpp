@@ -2,20 +2,18 @@
 
 #include <signal.h>
 #include <stdio.h>
-
+#include <unistd.h>
 
 void * signal_handler(int signumber)
 {
    printf("\nTermination Signal Handled!!\n\n");
-
 }
 
 int main()
 {
-   signal( SIGINT, (void *)  signal_handler );
-
+   signal( SIGINT, (void (*)(int))  signal_handler );
    while(1) {
-	printf("Doing Nothing...\n");
-	sleep(1000);
+	    printf("Doing Nothing...\n");
+	    sleep(1000);
    }
 }
