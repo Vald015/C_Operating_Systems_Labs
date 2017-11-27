@@ -1,3 +1,8 @@
+/*
+ *  Author: Osvaldo A. Ramirez
+ *	ICOM5007 - Laboratory work
+ *	LAb1 - Excersice 4: Handling signals
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -29,7 +34,6 @@ void * signal_handler(int signumber)
 
 int  main(void)
 {
-
      MyKey   = ftok(".", 's');
      ShmID   = shmget(MyKey, sizeof(pid_t), 0666);
      ShmPTR  = (pid_t *) shmat(ShmID, NULL, 0);
@@ -37,30 +41,11 @@ int  main(void)
      shmdt(ShmPTR);
 
      while (1) {
-          //printf("Want to interrupt the other guy or kill it or terminate (i or k or t)? ");
-          //gets(line);
-          //for (i = 0; !(isalpha(line[i])); i++);
-          //     c = line[i];
-          //if (c == 'i' || c == 'I') {
           if(signal( SIGINT, (void (*)(int))  signal_handler ) == SIG_ERR){
             printf("\nCouldn't catch SIGINT");
           }else if(signal( SIGQUIT, (void (*)(int))  signal_handler ) == SIG_ERR){
             printf("\nCouldn't catch SIGQUIT");
           }
-          //}
-          //else if (c == 'k' || c == 'K') {
-          //     printf("About to send a SIGQUIT signal\n");
-          //     kill(pid, SIGQUIT);
-          //     printf("Done.....\n");
-          //     exit(0);
-          //}else if(c == 't'|| c == 'T'){
-              //printf("About to sent a SIGTERM signal\n");
-          //    kill(pid,SIGTERM);
-              //printf("SENT SIGTERM signal");
-          //    exit(0);
-          //}
-          //else
-          //     printf("Wrong keypress (%c).  Try again\n", c);
      }
      return 0;
 }

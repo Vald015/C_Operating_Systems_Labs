@@ -1,3 +1,8 @@
+/*
+ *  Author: Osvaldo A. Ramirez
+ *	ICOM5007 - Laboratory work
+ *	LAb1 - Excersice 4: Handling signals
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -50,7 +55,6 @@ void  SIGINT_handler(int sig)
      printf("From SIGINT: just got a %d (SIGINT ^C) signal\n", sig);
      signal(sig, SIGINT_handler);
 }
-
 void  SIGQUIT_handler(int sig)
 {
      signal(sig, SIG_IGN);
@@ -64,8 +68,6 @@ void  SIGQUIT_handler(int sig)
 void  SIGTERM_handler(int sig)
 {
      signal(sig, SIG_IGN);
-     //printf("From SIGQUIT: just got a %d (SIGQUIT ^\\) signal"
-                          //" and is about to quit\n", sig);
      shmdt(ShmPTR);
      shmctl(ShmID, IPC_RMID, NULL);
 

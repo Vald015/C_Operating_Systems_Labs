@@ -1,3 +1,8 @@
+/*
+ *  Author: Osvaldo A. Ramirez
+ *	ICOM5007 - Laboratory work
+ *	LAb1 - Excersice 4: Handling signals
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -49,42 +54,20 @@ int main(void){
     printf("\nCouldn't catch SIGILL");
   }
 
-	//int T = 1;
-	//int FPEsignal = 0;
 	int total, zero = 0;
-	//int SEGVsignal = 0;
 	int array[3] = {0, 1, 2};
 	int *pointer;
 	int temp = 0;
 
-	//while(T){
-	printf("Enter 1 for FPE, 2 for SEGV: ");
+	printf("Enter 1 to provoke SIGFPE, 2 for SIGSEGV: ");
 	scanf("%d", &temp);
 	getchar();
 
-	//if(temp==1) FPEsignal = 1;
-	//if(temp==2) SEGVsignal = 1;
-	//if(temp==3) wantILL = 1;
-
-	//while(T){
-		//printf("Ready.\n");
-		sleep(1);
-
-		if(temp == 1){
-			total = 3 / zero;
-		}
-		if(temp == 2){
-			array[0] = pointer[1000];
-		}
-		//total = 0;
-		//temp = 0;
-	//}
-
-		//if(wantILL == 1){
-		//	raise(SIGILL);
-		//	T = 0;
-		//}
-
-	//}
+	if(temp == 1){
+		total = 3 / zero;
+	}
+	if(temp == 2){
+		array[0] = pointer[1000];
+	}
 	return 0;
 }

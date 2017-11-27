@@ -1,3 +1,8 @@
+/*
+ *  Author: Osvaldo A. Ramirez
+ *	ICOM5007 - Laboratory work
+ *	LAb1 - Excersice 4: Handling signals
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
